@@ -46,6 +46,7 @@ header {
 }
 
 .logo-text {
+    margin-top: 10px;
     width: 135px;
     font-family: 'Montserrat';
     font-style: normal;
@@ -111,7 +112,7 @@ header {
     line-height: 22px;
 }
 
-.section-right--descktop {
+.section-right {
     max-width: 350px;
     text-align: end;
     display: grid;
@@ -173,6 +174,19 @@ header {
     margin-bottom: 6px;
 }
 
+.section-right__item h4 {
+    margin-bottom: 6px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
 .section-right__item span {
     font-family: Montserrat;
     font-size: 16px;
@@ -180,6 +194,7 @@ header {
     line-height: 20px;
     letter-spacing: 0em;
     text-align: right;
+    text-transform: none;
 }
 
 .section-right__bottom {
@@ -280,164 +295,4 @@ header {
     font-size: 12px;
     line-height: 15px;
     text-align: right;
-}
-@media (min-width: 321px) {
-    .section-right--mobile {
-        display: none;
-    }
-
-    .mobile {
-        display: none;
-    }
-}
-
-@media (max-width: 320px) {
-    body {
-        background-image: url('./img/backround_mobile.png');
-        background-size: auto 500px;
-        margin: 0;
-    }
-
-    .logo,
-    .navigation-item:nth-child(5),
-    .header-right__social,
-    .section-right__item span,
-    .section-right--descktop,
-    .descktop {
-        display: none;
-    }
-
-    header {
-        min-width: 320px;
-        width: 100%;
-        background-color: #1e1e1e;
-
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 15px;
-        text-transform: uppercase;
-        color: #e4e5ea;
-    }
-
-    nav {
-        height: 55px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .navigation-item {
-        margin: 0 8px;
-    }
-    /* MAIN */
-
-    .section-wrapper {
-        margin: 40px 0 59px 14px;
-        flex-direction: column;
-    }
-
-    .header-secondary {
-        font-size: 36px;
-        line-height: 44px;
-        font-weight: 400;
-    }
-
-    .header-secondary--gradient {
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 900;
-        font-size: 36px;
-        line-height: 44px;
-    }
-
-    .header-secondary {
-        font-size: 36px;
-        line-height: 44px;
-    }
-
-    .section-left__text {
-        margin: 15px;
-    }
-
-    .section-right--mobile {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        margin-top: 45px;
-        text-align: start;
-        gap: 14px;
-        color: #e4e5ea;
-    }
-
-    .section-right__header--free {
-        text-align: left;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 22px;
-        text-transform: lowercase;
-        margin-bottom: 5px;
-    }
-
-    .section-right__item:nth-child(2n + 1) {
-        margin-left: -20px;
-    }
-
-    .section-right__item h4 {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 13px;
-        line-height: 16px;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-    }
-
-    .section-right__item h4::before {
-        content: url('./img/Line\ 8.png');
-        position: relative;
-        top: -4px;
-        margin-right: 5px;
-    }
-
-    .footer {
-        text-align: left;
-        margin-left: 15px;
-    }
-
-    .extra-margins {
-        margin: 0;
-    }
-
-    .footer-item__header {
-        font-size: 12px;
-        line-height: 15px;
-    }
-
-    .footer-container__left--item:first-child {
-        width: 100%;
-    }
-
-    .footer-container__left--item:last-child {
-        margin-left: 48px;
-    }
-
-    .footer-container__left a {
-        max-width: 115px;
-        word-wrap: break-word;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
-    }
-
-    .footer-right__contacts {
-        text-align: left;
-    }
-
-    .rights {
-        text-align: left;
-        margin: 50px 0 60px;
-    }
 }
