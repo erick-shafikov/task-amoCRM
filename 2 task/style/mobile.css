@@ -11,11 +11,7 @@
         margin: 0;
     }
 
-    .logo,
-    .navigation-item:nth-child(5),
-    .header-right__social,
-    .descktop,
-    .section-right__bottom {
+    .descktop {
         display: none;
     }
 
@@ -82,6 +78,10 @@
         color: #e4e5ea;
     }
 
+    .section-right {
+        margin-top: 22.5px;
+    }
+
     .section-right__header--free {
         text-align: left;
         font-weight: 500;
@@ -126,6 +126,9 @@
         font-size: 12px;
         line-height: 15px;
     }
+    .footer-container__left--item {
+        margin-bottom: 30px;
+    }
 
     .footer-container__left--item:first-child {
         width: 100%;
@@ -149,12 +152,12 @@
         margin: 30px 0 20px;
     }
 
-    .section-right {
-        margin-top: 22.5px;
-    }
-
     .footer-right__contacts {
         text-align: left;
+    }
+
+    .footer-container__right {
+        margin-top: -30px;
     }
 
     .footer-right__contacts:nth-child(4) {
